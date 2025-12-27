@@ -12,11 +12,17 @@ This project reproduces and enhances the graph-theory-based encryption algorithm
 
 ## Key Features
 ✅ **Flexible Plaintext Length** - Handles any length plaintext including prime numbers through intelligent padding
+
 ✅ **Adaptive Graph Support** - Works with any graph structure (4-vertex, 7-vertex, etc.) via adjacency matrix
+
 ✅ **Robust Padding Strategy** - Automatic padding ensures uniform matrix dimensions during transformations
+
 ✅ Detailed step-by-step encryption/decryption visualization
+
 ✅ Matrix transformations displayed at each cryptographic stage
+
 ✅ Configurable padding character and Caesar shift value
+
 ✅ Comprehensive test coverage for edge cases
 
 ## Enhancement Over Original Paper
