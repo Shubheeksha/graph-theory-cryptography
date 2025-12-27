@@ -7,6 +7,7 @@ class GraphCryptography:
         self.key1 = key1
         self.key2 = self._generate_key2_from_graph()
         self.padding_char = padding_char
+        self.adjacency_matrix = adjacency_matrix  # Store for printing
 
     def _generate_key2_from_graph(self):
         key2 = []
@@ -93,10 +94,14 @@ class GraphCryptography:
         original_length = len(plaintext)
         
         print(f"Step 0 - Original plaintext: {plaintext}")
-        print(f"Original length: {original_length}\n")
+        print(f"Original length: {original_length}")
+        print(f"\nAdjacency Matrix:")
+        print(np.array(self.adjacency_matrix))
+        print(f"Generated Key2 from graph: {self.key2}\n")
 
         caesar = self._caesar_encrypt(plaintext)
         print(f"Step 1 - After Caesar cipher (+{self.key1}): {caesar}\n")
+
 
         cols = len(self.key2)
         matrix1 = self._create_matrix(caesar, cols)
@@ -147,6 +152,7 @@ class GraphCryptography:
 
 
 if __name__ == '__main__':
+    
     adjacency_matrix = [
         [1,1,1,1],
         [1,0,0,1],
@@ -156,13 +162,24 @@ if __name__ == '__main__':
     key1 = 4
     crypto = GraphCryptography(adjacency_matrix, key1)
 
-    # prime-length plaintext (13)
-    plaintext = 'THISISANEXAMO'  # length 13
-    print('Plaintext :', plaintext)
+
+    plaintext = "THIS IS AN EXAMO"
+    print(f"\n{'='*60}")
+    print("ENCRYPTION")
+    print("="*60)
+   
+
 
     ciphertext, orig_len = crypto.encrypt(plaintext)
     print('Ciphertext:', ciphertext)
 
     decrypted = crypto.decrypt(ciphertext, orig_len)
-    print('Decrypted :', decrypted)
-    print('Match     :', decrypted == plaintext.upper())
+
+    print(f"\n{'='*60}")
+    print("VERIFICATION")
+    print("="*60)
+    print(f"Original:  {plaintext.replace(' ', '')}")
+    print(f"Decrypted: {decrypted}")
+    print(f"Match: {plaintext.replace(' ', '').upper() == decrypted}")
+
+ 
