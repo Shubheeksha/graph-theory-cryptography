@@ -1,7 +1,7 @@
 # Graph Theory Cryptography - Paper Reproduction
 
 A Python implementation of the cryptographic algorithm described in the paper:
-**"Applying Graph Theory to Secure Data Encryption"**
+**"Applying Graph Theory to Secure Data by Cryptography"**
 
 ## Overview
 This project reproduces and enhances the graph-theory-based encryption algorithm that combines:
