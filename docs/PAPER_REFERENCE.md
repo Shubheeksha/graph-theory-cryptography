@@ -1,13 +1,21 @@
 # Paper Reference
 
 ## Original Paper
-**Title:** Applying Graph Theory to Secure Data Encryption
+**Title:** Applying Graph Theory to Secure Data by Cryptography  
 
-### Paper Details
-- **Subject Area:** Cryptography, Graph Theory, Information Security
-- **Type:** Academic Research Paper
-- **Focus:** Using graph theory concepts to enhance encryption algorithms
+### Authors
+**Dr. Gurusharan Kaur**, **Dr. Namrata Tripathi**
 
+### Journal & Publication Details
+- **Journal:** *International Journal of Linguistics and Computational Applications (IJLCA)*
+- **Volume:** 8  
+- **Issue:** 1  
+- **Publication Period:** January – March 2021  
+- **ISSN (Print):** 2394-6385  
+- **ISSN (Online):** 2394-6393  
+- **DOI:** 10.30726/ijlca/v8.i1.2020.81001  
+
+---
 ### Key Concepts from Paper
 1. **Adjacency Matrix as Key:** Using graph structure to generate cryptographic keys
 2. **Column Permutation:** Reordering message columns based on graph properties
@@ -53,17 +61,10 @@ This represents the degree of each vertex.
    - Matrix 2: arrange by rows, read by sorted columns again
    - Result: ciphertext
 
-### References & Citations
-- **Original Paper:** "Applying Graph Theory to Secure Data Encryption"
-- **Graph Theory Concepts:** Based on standard graph theory principles
-- **Cryptography:** Caesar cipher + columnar transposition variation
+## References & Citations
 
-### Notes for Future Work
-1. Extend to larger graphs (10+ vertices)
-2. Implement key scheduling based on graph properties
-3. Add support for different graph types (weighted, directed)
-4. Performance analysis for various graph sizes
-5. Security analysis against frequency analysis attacks
+- **Kaur, G., & Tripathi, N.** (2021). *Applying Graph Theory to Secure Data by      Cryptography*.  
+  International Journal of Linguistics and Computational Applications (IJLCA), 8(1).
 
 ---
 
@@ -73,8 +74,4 @@ This repository contains a faithful reproduction of the paper's algorithm with t
 - **Educational Purpose:** Understanding how graph theory can be applied to cryptography
 - **Practical Purpose:** A working cryptographic tool for educational demonstrations
 
-For academic citations, please refer to the original paper and cite this implementation as:
-```
-Shubheeksha. (2025). Graph Theory Cryptography - Paper Reproduction.
-GitHub: https://github.com/Shubheeksha/graph-theory-cryptography
-```
+
